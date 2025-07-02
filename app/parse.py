@@ -91,7 +91,7 @@ def get_product_with_button(
         class_name: str,
         count: int = None,
         button_name: str = None,
-) -> None:
+) -> list[Product]:
     driver = webdriver.Chrome()
     driver.get(url)
     cookies_btn = driver.find_element(By.CLASS_NAME, "acceptCookies")
